@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
 * {
   box-sizing: border-box;
@@ -21,11 +22,19 @@
 
 /* Navbar CSS */
 .navbar {
+  font-family: 'Gilda Display', serif;
+  font-size: 64px;
   background-color: #ffffff;
   height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.logo{
+  font-family: 'Gilda Display', serif;
+  font-size: 64px;
+  margin-left: 30px;
 }
 
 .menu-bars {
@@ -93,4 +102,64 @@
 
 span {
   margin-left: 16px;
+}
+
+/* Products */
+.products{
+  background-color: blue;
+}
+
+.product-side{
+  background-color: pink;
+  width: 600px;
+  font-size: small;
+}
+
+.product-container{
+  background-color: teal;
+  height: 100%;
+  font-size: small;
+}
+
+button{
+  border-radius: 3px;
+}
+
+.cards{
+  list-style: none;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(33% - 2rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: calc(25% - 2rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: calc(20% - 2rem);
+  }
 }
