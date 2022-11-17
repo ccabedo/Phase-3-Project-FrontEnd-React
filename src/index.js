@@ -14,6 +14,7 @@ import Cart from "./routes/Cart";
 import Team from "./routes/Team";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import "./index.css";
 
 const AppLayout = () => (
   <>

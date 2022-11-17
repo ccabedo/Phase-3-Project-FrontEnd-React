@@ -18,9 +18,9 @@ function Navbar() {
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-         <div className="logo">ARISTO</div>
+          <div className="logo">ARISTO</div>
         </div>
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+        <nav className={`${sidebar ? "nav-menu active" : "nav-menu"} z-20`}>
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars">
@@ -35,7 +35,7 @@ function Navbar() {
                     <span>{item.title}</span>
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </nav>
