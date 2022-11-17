@@ -23,16 +23,6 @@ const AppLayout = () => (
   </>
 );
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route element={<AppLayout />}>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/products" element={<Products />} />
-//       <Route path="/cart" element={<Cart />} />
-//     </Route>
-//   )
-// );
-
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
