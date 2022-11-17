@@ -3,17 +3,15 @@ import React from "react";
 function Team(){
     
     return(
-<div class="row">
   <div class="column">
     <div class="card">
-      <img src="blank.com" alt="Teana"/>
+      <img className="img-card" src="https://i.ibb.co/YRsXDL1/Screen-Shot-2022-11-17-at-12-47-58-PM.png" alt="Teana"/>
       <div class="container">
-        <h2>Teana Zhou</h2>
-        <p>teanazhou@aristo.com</p>
+        <h2>Teana Zhong</h2>
+        <p>teanazhong@aristo.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
-  </div>
 
   <div class="column">
     <div class="card">

@@ -1,6 +1,10 @@
-import React from 'react';
+import {useState} from 'react';
 
 function ProductCard({ price, product_name, images}){
+
+    function addToCart(){
+        
+    }
     
 
 
@@ -10,7 +14,7 @@ function ProductCard({ price, product_name, images}){
         <h4>{product_name}</h4>
         <p>Price: ${price}</p>
         {true ? (
-            <button className="primary">Add to Cart</button>
+            <button className="primary" type="submit">Add to Cart</button>
         ) : (
             <button>Out of Stock</button>
         )}

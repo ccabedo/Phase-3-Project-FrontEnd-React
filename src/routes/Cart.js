@@ -3,6 +3,7 @@ import React from "react";
 
 function Cart( ) {
   return (
+    <div className="basket-container">
     <div class="basket">
     <div class="basket-module">
     <label for="promo-code">Enter a promotional code</label>
@@ -60,7 +61,7 @@ function Cart( ) {
       </div>
     </div>
 
-/* <aside>
+<aside>
       <div class="summary">
         <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
         <div class="summary-subtotal">
@@ -88,7 +89,8 @@ function Cart( ) {
           <button class="checkout-cta">Go to Secure Checkout</button>
         </div>
       </div>
-</aside> */
+</aside> 
+</div>
   );
 }
 
