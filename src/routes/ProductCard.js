@@ -3,7 +3,7 @@ import { useState } from "react";
 function ProductCard({ price, product_name, images }) {
   const [toggleImage, setToggleImage] = useState(true);
 
-  const handleImageClick = () => {
+  const handleMouseOver = () => {
     setToggleImage(!toggleImage);
   };
 
@@ -15,14 +15,14 @@ function ProductCard({ price, product_name, images }) {
             className="pl-7"
             src={images[0]["image_1"]}
             alt={"1"}
-            onMouseEnter={handleImageClick}
+            onMouseEnter={handleMouseOver}
           />
         ) : (
           <img
             className="pl-7"
             src={images[0]["image_2"]}
             alt={"2"}
-            onMouseLeave={handleImageClick}
+            onMouseLeave={handleMouseOver}
           />
         )}
       </div>
