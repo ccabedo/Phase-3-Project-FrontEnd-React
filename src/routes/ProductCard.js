@@ -2,15 +2,15 @@ import {useState} from 'react';
 
 function ProductCard({ price, product_name, images}){
 
-    function addToCart(){
-        
-    }
-    
 
+    
 
     return(
         <li className="card">
-        <img src={images[0]['image_1']} alt={product_name} />
+        <div className='block'>
+        <img className='main-img' srcset={images[0]['image_1']} src={images[0]['image_1']} alt={product_name}/>
+        <img className='hover-img' srcset={images[0]['image_2']} src={images[0]['image_2']} alt={product_name}/>
+        </div>
         <h4>{product_name}</h4>
         <p>Price: ${price}</p>
         {true ? (

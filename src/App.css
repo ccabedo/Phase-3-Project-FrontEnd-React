@@ -128,6 +128,26 @@ button{
   list-style: none;
 }
 
+.block{
+  position: relative;
+  max-width: 100%;
+}
+
+.block img.hover-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.block img.hover-img{
+  opacity: 1;
+}
+
 .card {
   margin: 1rem;
 }
@@ -166,6 +186,11 @@ button{
 .img-card{
   border-radius: 100%;
   height: 340px;
+  filter: grayscale(100%)
+}
+
+.img-card:hover{
+  filter: none;
 }
 
 .cart-container{
@@ -585,4 +610,4 @@ aside {
 
 .basket-container{
   margin-left: 10%;
-}`
+}
