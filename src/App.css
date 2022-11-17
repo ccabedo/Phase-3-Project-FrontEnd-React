@@ -8,18 +8,23 @@
   font-family: "Lato", sans-serif;
 }
 
-.home,
-.reports,
-.products {
+.home{
   display: flex;
-  height: 90vh;
+  height: 100%;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  background-color: #000;
+  background-image: url("https://static.wixstatic.com/media/e37733_b2319d56fef048d6ad3c97b15f051e18~mv2.gif");
+  background-repeat: no-repeat;
+  opacity: 50%;
   color: #fff;
 }
 
+
+
+.home-gif{
+  height: 100%;
+}
 /* Navbar CSS */
 .navbar {
   font-family: 'Gilda Display', serif;
@@ -106,23 +111,14 @@ span {
 
 /* Products */
 .products{
-  background-color: blue;
-}
-
-.product-side{
-  background-color: pink;
-  width: 600px;
-  font-size: small;
-}
-
-.product-container{
-  background-color: teal;
+  background-color: white;
   height: 100%;
+  color: gray;
   font-size: small;
 }
 
 button{
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .cards{
@@ -162,4 +158,8 @@ button{
   .card {
     width: calc(20% - 2rem);
   }
+}
+
+.img-card{
+  border-radius: 60%;
 }

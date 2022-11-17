@@ -10,7 +10,8 @@ import {
 } from "react-router-dom";
 import Products from "./routes/Products";
 import Home from "./routes/Home";
-import Reports from "./routes/Reports";
+import Cart from "./routes/Cart";
+import Team from "./routes/Team";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -26,7 +27,7 @@ const AppLayout = () => (
 //     <Route element={<AppLayout />}>
 //       <Route path="/" element={<Home />} />
 //       <Route path="/products" element={<Products />} />
-//       <Route path="/reports" element={<Reports />} />
+//       <Route path="/cart" element={<Cart />} />
 //     </Route>
 //   )
 // );
@@ -44,8 +45,12 @@ const router = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: "reports",
-        element: <Reports />,
+        path: "cart",
+        element: <Cart />,
+      },
+      {
+        path: "team",
+        element: <Team />,
       },
     ],
   },
