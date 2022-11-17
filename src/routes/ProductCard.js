@@ -1,12 +1,14 @@
 import React from 'react';
 
-function ProductCard({ price, product_name, image_1, image_2, image_3, image_4}){
+function ProductCard({ price, product_name, images}){
+    
+
 
     return(
         <li className="card">
-        <img src="https://cache.mrporter.com/variants/images/45666037504351954/in/w560_q60.jpg" alt={product_name} />
+        <img src={images[0]['image_1']} alt={product_name} />
         <h4>{product_name}</h4>
-        <p>Price: {price}</p>
+        <p>Price: ${price}</p>
         {true ? (
             <button className="primary">Add to Cart</button>
         ) : (
