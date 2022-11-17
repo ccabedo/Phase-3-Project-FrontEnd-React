@@ -20,7 +20,7 @@ function Navbar() {
           </Link>
           <div className="logo">ARISTO</div>
         </div>
-        <nav className={`${sidebar ? "nav-menu active" : "nav-menu"} z-20`}>
+        <nav className={`${sidebar ? "nav-menu active" : "nav-menu"} z-10`}>
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars">
