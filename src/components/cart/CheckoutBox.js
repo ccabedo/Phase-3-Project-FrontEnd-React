@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CheckoutBox() {
+export default function CheckoutBox({ cartItems }) {
   return (
     <aside>
       <div className="summary">
@@ -10,7 +10,7 @@ export default function CheckoutBox() {
         <div className="summary-subtotal">
           <div className="subtotal-title">Subtotal</div>
           <div className="subtotal-value final-value" id="basket-subtotal">
-            130.00
+            {cartItems.subtotal.toFixed(2)}
           </div>
           <div className="summary-promo hide">
             <div className="promo-title">Promotion</div>
@@ -34,7 +34,7 @@ export default function CheckoutBox() {
         <div className="summary-total">
           <div className="total-title">Total</div>
           <div className="total-value final-value" id="basket-total">
-            130.00
+            {cartItems.subtotal.toFixed(2)}
           </div>
         </div>
         <div className="summary-checkout">
